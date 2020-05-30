@@ -33,6 +33,8 @@ curl -X POST -d "" "${URL}/incoming"
 
 echo -e "\n\nTest: '/file'"
 curl -X POST -F 'file=@Dockerfile' "${URL}/file"
+# ↑これやると Dockerfile の内容きえるので注意
+# TODO: テスト用のファイルを作ってやれ
 
 echo -e "\n\n\ndone."
 
